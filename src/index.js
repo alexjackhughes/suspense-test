@@ -11,6 +11,4 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 You can opt into Concurrent Mode by writing:
  */
-ReactDOM.createRoot(
-    document.getElementById('root')
-).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);

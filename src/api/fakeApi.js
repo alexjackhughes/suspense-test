@@ -46,22 +46,22 @@ export function fetchUser(userId) {
             switch (userId) {
                 case 0:
                     resolve({
-                        name: "Ringo Starr"
+                        name: "Ben"
                     });
                     break;
                 case 1:
                     resolve({
-                        name: "George Harrison"
+                        name: "Simon"
                     });
                     break;
                 case 2:
                     resolve({
-                        name: "John Lennon"
+                        name: "Alex #1"
                     });
                     break;
                 case 3:
                     resolve({
-                        name: "Paul McCartney"
+                        name: "Lucy"
                     });
                     break;
                 default:
@@ -84,17 +84,7 @@ export function fetchPosts(userId) {
                         {
                             id: 0,
                             text:
-                                "I get by with a little help from my friends"
-                        },
-                        {
-                            id: 1,
-                            text:
-                                "I'd like to be under the sea in an octupus's garden"
-                        },
-                        {
-                            id: 2,
-                            text:
-                                "You got that sand all over your feet"
+                                "Feels slightly overcomplicated but 🤷"
                         }
                     ]);
                     break;
@@ -103,16 +93,7 @@ export function fetchPosts(userId) {
                         {
                             id: 0,
                             text:
-                                "Turn off your mind, relax, and float downstream"
-                        },
-                        {
-                            id: 1,
-                            text: "All things must pass"
-                        },
-                        {
-                            id: 2,
-                            text:
-                                "I look at the world and I notice it's turning"
+                                "Can we not just use Vue.js? 🙅"
                         }
                     ]);
                     break;
@@ -121,16 +102,7 @@ export function fetchPosts(userId) {
                         {
                             id: 0,
                             text:
-                                "Living is easy with eyes closed"
-                        },
-                        {
-                            id: 1,
-                            text:
-                                "Nothing's gonna change my world"
-                        },
-                        {
-                            id: 2,
-                            text: "I am the walrus"
+                                "Don't worry, everything is fine but our cluster is on fire 🔥"
                         }
                     ]);
                     break;
@@ -138,16 +110,7 @@ export function fetchPosts(userId) {
                     resolve([
                         {
                             id: 0,
-                            text: "Woke up, fell out of bed"
-                        },
-                        {
-                            id: 1,
-                            text: "Here, there, and everywhere"
-                        },
-                        {
-                            id: 2,
-                            text:
-                                "Two of us sending postcards, writing letters"
+                            text: "YOU'RE NOT A DOCTOR 👩‍⚕️"
                         }
                     ]);
                     break;

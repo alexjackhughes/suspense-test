@@ -61,9 +61,15 @@ export function fetchUser(userId) {
                     break;
                 case 3:
                     resolve({
+                        name: "Wyc"
+                    });
+                    break;
+                case 4:
+                    resolve({
                         name: "Lucy"
                     });
                     break;
+
                 default:
                     throw Error("Unknown user.");
             }
@@ -102,7 +108,7 @@ export function fetchPosts(userId) {
                         {
                             id: 0,
                             text:
-                                "Don't worry, everything is fine but our cluster is on fire 🔥"
+                                "Don't worry, everything is fine but *technically* our cluster is on fire 🔥"
                         }
                     ]);
                     break;
@@ -110,7 +116,15 @@ export function fetchPosts(userId) {
                     resolve([
                         {
                             id: 0,
-                            text: "YOU'RE NOT A DOCTOR 👩‍⚕️"
+                            text: "By the time network latency becomes a significant factor, I fully intend to be living on a sunny beach 🏖️"
+                        }
+                    ]);
+                    break;
+                case 4:
+                    resolve([
+                        {
+                            id: 0,
+                            text: "YOU'RE NOT A DOCTOR, BEN 👩‍⚕️"
                         }
                     ]);
                     break;

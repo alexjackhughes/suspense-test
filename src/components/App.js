@@ -4,7 +4,7 @@ import { fetchProfileData } from "../api/fakeApi";
 import { ProfilePage } from './ProfilePage'
 
 const getNextId = (id) => {
-  return id === 3 ? 0 : id + 1;
+  return id === 4 ? 0 : id + 1;
 }
 
 const App = () => {

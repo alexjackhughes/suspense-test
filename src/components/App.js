@@ -28,7 +28,7 @@ const App = () => {
 }
 export default App;
 
-  // const [startTransition, isPending] = useTransition({ timeoutMs: 2000 });
+// const [startTransition, isPending] = useTransition({ timeoutMs: 2000 });
 
 // This uses a sexy transition:
 //   startTransition(() => {

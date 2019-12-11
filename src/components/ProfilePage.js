@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-
+// with suspense
 export const ProfilePage = ({ resource, onClick }) => {
     return (
         <div onClick={onClick} style={{ cursor: "pointer" }}>
@@ -18,10 +18,22 @@ export const ProfilePage = ({ resource, onClick }) => {
     );
 }
 
+// without suspense
+// export const ProfilePage = ({ resource, onClick }) => {
+//     if (!resource) {
+//         return <h1>Loading data...</h1>
+//     }
+//     return (
+//         <div onClick={onClick} style={{ cursor: "pointer" }}>
+//             <ProfileDetails resource={resource} />
+//             <ProfileTimeline resource={resource} />
+//         </div>
+//     );
+// }
+
 const ProfileDetails = ({ resource }) => {
     // These are resolved before we return.
     const user = resource.user.read();
-
     return <h3>{user.name}</h3>;
 }
 
